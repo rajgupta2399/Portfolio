@@ -1,0 +1,31 @@
+.about-me .content h3 {
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+.about-me .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-me .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.about-me .content ul strong {
+  margin-right: 10px;
+}
+
+.about-me .content ul i {
+  font-size: 1rem;
+  margin-right: 5px;
+  color: var(--primary);
+  line-height: 0;
+}
+
+.about-me .content p:last-child {
+  margin-bottom: 0;
+}

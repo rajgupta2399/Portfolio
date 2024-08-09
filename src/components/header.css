@@ -1,0 +1,135 @@
+#header {
+  transition: ease-in-out 1s;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  z-index: 997;
+  overflow-y: auto;
+  /* overflow: hidden; */
+}
+
+#header * {
+  transition: ease-in-out 0.5s;
+}
+
+#header h1 {
+  font-size: 8rem;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+}
+
+#header h1 a,
+#header h1 a:hover {
+  color: #fff;
+  line-height: 1;
+  display: inline-block;
+}
+
+#header h2 {
+  font-size: 1.8rem;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#header h2 span {
+  color: #fff;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 6px;
+}
+
+#header img {
+  margin: 0;
+  padding: 0;
+}
+
+/* responsive  */
+
+@media (max-width: 992px) {
+  #header h1 {
+    font-size: 3.5rem;
+  }
+
+  #header h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  #header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* header top  */
+
+#header.header-top {
+  height: 80px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.316);
+}
+
+#header.header-top h1 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 500;
+}
+
+#header.header-top .social-links,
+#header.header-top h2 {
+  display: none;
+}
+
+#header.header-top .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header.header-top .navbar {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #header.header-top {
+    height: 60px;
+  }
+
+  #header.header-top h1 {
+    font-size: 20px;
+  }
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .navbar ul li {
+    margin-bottom: 10px;
+  }
+  #header.header-top {
+    height: 130px;
+
+  }
+  #header.header-top h1 {
+    line-height: 2;
+    font-weight: 600;
+  }
+  section.section-show {
+    top: 150px;
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    padding-bottom: 50px;
+    overflow-y: visible;
+  }
+}
